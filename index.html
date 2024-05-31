@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Webpack App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Currency converter</h1>
+        </div>
+        <div class="row">
+            <ul class="nav nav-tabs" id="tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="converter-tab" data-bs-toggle="tab" data-bs-target="#converter"
+                        type="button" role="tab" aria-controls="home" aria-selected="true">Converter</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="rates-tab" data-bs-toggle="tab" data-bs-target="#rates"
+                        type="button" role="tab" aria-controls="rates" aria-selected="false">Courses</button>
+                </li>
+            </ul>
+        </div>
+        <div class="row card">
+            <div class="tab-content card-body" id="tabContent">
+                <div class="tab-pane fade show active" id="converter" role="tabpanel" aria-labelledby="converter-tab">
+                    <form class="col">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" id="inputConverterString"
+                                placeholder="" name="converterString">
+                                <div id="converterStringHelper" class="form-text">Example: 15 usd in rub</div>
+                            </div>
+                            <div class="col">
+                                <p id="converterResult"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary">Convert</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="rates" role="tabpanel" aria-labelledby="rates-tab">
+                    <form class="col">
+                        <div class="row">
+                            <label class="form-label">Base currency</label>
+                            <select class="form-select form-select mb-3" aria-label="currencies" name="baseCurrency">
+                                <!--<option selected value="rub">RUB</option>
+                                <option value="usd">USD</option>
+                                <option value="eur">EUR</option>-->
+                            </select>
+                        </div>
+                        <div class="row">
+                            <ul class="list-group">
+                                <li class="list-group-item">1 USD = 63.49 RUB</li>
+                                <li class="list-group-item">1 EUR = 72.20 RUB</li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
