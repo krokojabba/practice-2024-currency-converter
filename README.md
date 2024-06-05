@@ -1,15 +1,16 @@
-# 🚀 Welcome to your new awesome project!
-
-This project has been created using **webpack-cli**, you can now run
-
+# Currency converter
+Проект сделан в рамках практики Хекслет в 2024 году.
+## Задание
+<https://github.com/appbooster/test-assignments/blob/master/tasks/frontend.md>
+## Установка
 ```
-npm run build
+make install
 ```
-
-or
-
+## Сборка проекта
 ```
-yarn build
+make build
 ```
-
-to bundle your application
+Собранные файлы проекта будут созданы в директории ./dist
+## Демо
+Web приложение доступно по ссылке:
+<https://krokojabba.github.io/practice-2024-currency-converter/>

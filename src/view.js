@@ -68,14 +68,11 @@ export default (initState) => {
                 renderRatesList(state, rateList);
                 break;
             }
-            case 'converter.status': {
+            case 'converter.status': 
+            case 'converter.result': {
                 renderConverterForm(state, converterForm);
                 break;
             }
-            /* case 'state.converter.result': {
-                renderConverterResult(state, converterForm);
-                break;
-            } */
             default:
                 break;
         }
